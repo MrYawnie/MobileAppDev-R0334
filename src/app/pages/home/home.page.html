@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Movie Database</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card button color="warning" [routerLink]="'../trending'">
+    <ion-card-header>
+      <ion-card-title>Trending Movies</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="secondary" [routerLink]="'../top-rated'">
+    <ion-card-header>
+      <ion-card-title>Top-Rated Movies</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="success" [routerLink]="'../upcoming'">
+    <ion-card-header>
+      <ion-card-title>Upcoming Movies</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
