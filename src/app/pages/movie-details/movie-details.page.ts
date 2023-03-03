@@ -29,6 +29,10 @@ export class MovieDetailsPage implements OnInit {
     window.open(URL, '_blank');
   }
 
+  openSimilarMoviesPage(id: any) {
+    window.open(`/similar-movies/${id}`, '_blank');
+  }
+
   openTrailer(URL: any) {
     window.open(URL, '_blank');
   }

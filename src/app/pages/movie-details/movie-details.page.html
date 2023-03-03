@@ -43,8 +43,13 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-button expand="block" color="warning" (click)="openHomePage(movie.homepage)" *ngIf="movie?.homepage">
+    <ion-button slot="start" color="warning" (click)="openHomePage(movie.homepage)" *ngIf="movie?.homepage">
       <ion-icon slot="start" name="open-outline"></ion-icon>
-      Open Homepage</ion-button>
+      Homepage
+    </ion-button>
+    <ion-button slot="start" color="warning" [routerLink]="'./similar'">
+      <ion-icon slot="start" name="open-outline"></ion-icon>
+      Similar Movies
+    </ion-button>
   </ion-toolbar>
 </ion-footer>

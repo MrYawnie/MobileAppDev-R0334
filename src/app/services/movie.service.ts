@@ -25,6 +25,10 @@ export class MovieService {
     return this.http.get<ApiResult>(`${environment.apiUrl}/movie/popular?api_key=${environment.apiKey}&page=${page}`);
   }
 
+  getSimilarMovies(id: any, page = 1): Observable<ApiResult> {
+    return this.http.get<ApiResult>(`${environment.apiUrl}/movie/${id}/similar?api_key=${environment.apiKey}&page=${page}`);
+  }
+
   getMovieDetails(id: any): Observable<any> {
     return this.http.get<ApiResult>(`${environment.apiUrl}/movie/${id}?api_key=${environment.apiKey}`);
   }
