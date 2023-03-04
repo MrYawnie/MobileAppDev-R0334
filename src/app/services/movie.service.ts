@@ -26,7 +26,7 @@ export class MovieService {
   }
 
   getUpcomingMovies(page = 1): Observable<ApiResult> {
-    return this.http.get<ApiResult>(`${environment.apiUrl}/movie/upcoming?api_key=${environment.apiKey}&page=${page}`);
+    return this.http.get<ApiResult>(`${environment.apiUrl}/movie/upcoming?api_key=${environment.apiKey}&page=${page}&region=FI`);
   }
 
   getSimilarMovies(id: any, page = 1): Observable<ApiResult> {
