@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "labwork-4-49e3f": {
+      "hosting": {
+        "app": [
+          "labwork-4-49e3f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "labwork-4-49e3f"
+  }
+}
